@@ -25,6 +25,8 @@ public class Main {
 
         System.out.print("Result => ");
         System.out.println( ArOr.concatAndSort(list1,list2,list3) );
+
+        System.out.println("Successfully reverted in Git");
     }
 
 }
