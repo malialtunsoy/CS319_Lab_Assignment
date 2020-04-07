@@ -25,6 +25,29 @@ public class Main {
 
         System.out.print("Result => ");
         System.out.println( ArOr.concatAndSort(list1,list2,list3) );
+        System.out.println("----------------------------------------");
+
+
+        Player p1 = new Player("Tom");
+        Player p2 = new Player("John");
+        Player p3 = new Player("James");
+        Player p4 = new Player("Henry");
+
+        Die myDie = new Die();
+
+        for(int i = 0; i < 5; i++){
+            p1.addScore( myDie.rollDie() );
+            p2.addScore( myDie.rollDie() );
+            p3.addScore( myDie.rollDie() );
+            p4.addScore( myDie.rollDie() );
+        }
+
+        System.out.println( p1.getName() + " has " + p1.getScore() + " points." );
+        System.out.println( p2.getName() + " has " + p2.getScore() + " points." );
+        System.out.println( p3.getName() + " has " + p3.getScore() + " points." );
+        System.out.println( p4.getName() + " has " + p4.getScore() + " points." );
+
+
     }
 
 }
